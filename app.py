@@ -1,4 +1,4 @@
-import tkinter
+from tkinter import PhotoImage
 import customtkinter
 
 # This file contains basic settings
@@ -14,7 +14,8 @@ app.geometry("720x480")
 
 # Customize app frame
 app.title("PyPlayer")
-app.iconbitmap("assets/music-notes.ico")
+icon = PhotoImage(file="assets/music-notes.png")
+app.after(201, lambda :app.iconphoto(False, icon))
 
 # Run the app
 app.mainloop()
