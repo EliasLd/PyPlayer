@@ -14,6 +14,7 @@ app.geometry("720x480")
 
 # Customize app frame
 app.title("PyPlayer")
+app.iconbitmap("assets/music-notes.ico")
 
 # Run the app
 app.mainloop()
