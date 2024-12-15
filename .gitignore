@@ -159,3 +159,6 @@ cython_debug/
 
 # MP3 tests folder
 tests/MP3_tests_files/
+
+# Images tests folder
+tests/images_tests_files/
