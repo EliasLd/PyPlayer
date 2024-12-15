@@ -37,7 +37,8 @@ class Music():
         # Get the cover
         cover = None
         # APIC = Attached PICture
-        if "APIC" in audio.tags:
+        if "APIC:" in audio.tags:
+            print("Getting the cover")
             apic = audio.tags["APIC:"]
             # Binaries of the image
             cover = apic.data
