@@ -50,7 +50,7 @@ def test_mp3_metadata(file_path, expected_title,
     
     assert images_are_equals(test_cover, expected_cover)
 
-def images_are_equals(test_img, ref_img):
+def images_are_equals(test_img, ref_img) -> bool:
     """Compare two images to check if
     they are equals
 

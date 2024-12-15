@@ -13,7 +13,9 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        # Customize app frame
+    def setup(self):
+        # Contains basic settings for
+        # customtkinter app
         self.title("PyPlayer")
         icon = PhotoImage(file="assets/music-notes.png")
         self.after(201, lambda :self.iconphoto(False, icon))
@@ -21,4 +23,5 @@ class App(customtkinter.CTk):
 
 # Create and run the app
 app = App()
+app.setup()
 app.mainloop()
