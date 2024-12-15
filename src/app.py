@@ -19,7 +19,7 @@ class App(customtkinter.CTk):
         self.title("PyPlayer")
         icon = PhotoImage(file="assets/music-notes.png")
         self.after(201, lambda :self.iconphoto(False, icon))
-        self.geometry("720x480")
+        self.geometry("920x600")
 
 # Create and run the app
 app = App()
