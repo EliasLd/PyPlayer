@@ -1,6 +1,8 @@
 from tkinter import PhotoImage
 import customtkinter
 
+from components.navbar import NavBar
+
 # This file contains settings
 # for the application
 
@@ -12,6 +14,8 @@ customtkinter.set_default_color_theme("dark-blue")
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
+        self.setup()
+        self.navbar = NavBar(self)
 
     def setup(self):
         # Contains basic settings for
@@ -23,5 +27,4 @@ class App(customtkinter.CTk):
 
 # Create and run the app
 app = App()
-app.setup()
 app.mainloop()
